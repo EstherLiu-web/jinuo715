@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jinuo Liu | Professional Portfolio</title>
+    <style>
+        :root { 
+            --bg: #050505; 
+            --accent: #8a2be2; 
+            --glass: rgba(255, 255, 255, 0.05);
+            --text: #ffffff;
+        }
+        body { background: var(--bg); color: var(--text); font-family: 'Helvetica Neue', sans-serif; margin: 0; line-height: 1.6; scroll-behavior: smooth; }
+        
+        /* 导航栏 */
+        nav { position: fixed; top: 0; width: 100%; padding: 20px 40px; display: flex; justify-content: flex-end; gap: 30px; z-index: 1000; background: rgba(5,5,5,0.8); backdrop-filter: blur(10px); box-sizing: border-box; }
+        nav a { color: #888; text-decoration: none; font-size: 0.9em; transition: 0.3s; font-weight: bold; }
+        nav a:hover { color: var(--accent); }
+
+        section { min-height: 100vh; display: flex; flex-direction: column; justify-content: center; align-items: center; padding: 100px 40px 40px 40px; border-bottom: 1px solid #222; }
+        
+        /* 头像与紫色圆框重叠 */
+        .profile-container { position: relative; width: 160px; height: 160px; margin-bottom: 20px; }
+        .glow-circle { position: absolute; width: 100%; height: 100%; border-radius: 50%; border: 2px solid var(--accent); box-shadow: 0 0 20px var(--accent); z-index: 1; }
+        .avatar-img { position: relative; width: 100%; height: 100%; border-radius: 50%; object-fit: cover; z-index: 2; }
+        
+        /* 便当盒布局 */
+        .bento-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; width: 90%; max-width: 1200px; }
+        .card { background: var(--glass); backdrop-filter: blur(15px); border: 1px solid rgba(255,255,255,0.1); padding: 25px; border-radius: 20px; transition: 0.4s; }
+        .card:hover { transform: translateY(-10px); box-shadow: 0 0 25px rgba(138, 43, 226, 0.4); }
+
+        /* 图片样式 */
+        .image-content { width: 100%; margin-top: 15px; border-radius: 10px; border: 1px solid var(--accent); }
+        
+        /* 结尾卡片 */
+        .footer-cta { width: 90%; max-width: 800px; padding: 60px; border: 2px solid var(--accent); border-radius: 30px; text-align: center; background: rgba(138, 43, 226, 0.05); margin-top: 50px; }
+        
+        h1 { font-size: 2.8em; margin: 10px 0; }
+        h2 { color: var(--accent); margin-bottom: 30px; }
+    </style>
+</head>
+<body>
+
+    <nav>
+        <a href="#intro">INTRO</a>
+        <a href="#career">CAREER</a>
+        <a href="#tools">TOOLS</a>
+        <a href="#contact">CONTACT</a>
+    </nav>
+
+    <section id="intro">
+        <div class="profile-container">
+            <div class="glow-circle"></div>
+            <img src="WechatIMG152.jpg" alt="Jinuo Liu" class="avatar-img">
+        </div>
+        <h1>Jinuo Liu</h1>
+        <p>Macau University of Science and Technology | Communication & Spanish</p>
+        <p>Email: liujinuo@gmail.com | Phone: 15021420715</p>
+    </section>
+
+    <section id="career">
+        <h2>Experience - IPG Mediabrands</h2>
+        <div class="bento-grid">
+            <div class="card">
+                <h3>Project Coordination</h3>
+                <p>Managed campaigns for Nike, New Balance, Burger King, and AirAsia. Coordinated 500+ KOLs and integrated cross-departmental resources.</p>
+                <img src="截屏2026-06-16 22.16.27.png" class="image-content">
+            </div>
+            <div class="card">
+                <h3>Data Analysis</h3>
+                <p>Tracked 5,000+ data points, using Excel Pivot Tables and VLOOKUP for insights. Converted data into actionable weekly/monthly reports.</p>
+                <img src="截屏2026-06-16 20.05.49.png" class="image-content">
+            </div>
+            <div class="card">
+                <h3>Cross-functional Collaboration</h3>
+                <p>Actively tracked project nodes to solve information synchronization issues between internal teams and external suppliers.</p>
+                <img src="截屏2026-06-16 22.12.23.png" class="image-content">
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <h2>Experience - Trip.com</h2>
+        <div class="bento-grid">
+            <div class="card" style="grid-column: span 3;">
+                <h3>Product Operations & Data Insights</h3>
+                <p>Participated in tourism product operations focused on European tour products. Analyzed user behavior and 3,000+ customer feedback responses to identify product pain points. Collaborated closely with product, operations, and merchant teams to support campaign execution and business initiatives.</p>
+                <img src="截屏2026-06-16 22.17.59.png" class="image-content">
+                <img src="截屏2026-06-16 22.20.55.png" class="image-content">
+                <p style="font-size: 0.8em; color: #666; margin-top:10px;">[Data obscured due to commercial confidentiality]</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="tools">
+        <h2>Global Communication & Tools</h2>
+        <div class="bento-grid">
+            <div class="card">
+                <h3>International Experience</h3>
+                <p>Coordinated opening receptions for Consulates General of Portuguese-speaking countries; experienced in multicultural environments.</p>
+                <img src="截屏2026-06-16 22.24.47.png" class="image-content">
+                <img src="WechatIMG148.jpg" class="image-content">
+            </div>
+            <div class="card" style="grid-column: span 2;">
+                <h3>AI Proficiency</h3>
+                <p>ChatGPT, Gemini, and Jimeng for information synthesis, advanced data analysis, and visual material production.</p>
+                <img src="截屏2026-06-16 22.07.14.png" class="image-content">
+                <img src="WechatIMG149.jpg" class="image-content">
+            </div>
+        </div>
+    </section>
+
+    <section id="contact">
+        <div class="footer-cta">
+            <h2 style="margin-bottom: 20px;">Let's build the future.</h2>
+            <p style="font-size: 1.5em; color: #fff;">liujinuo@gmail.com</p>
+        </div>
+    </section>
+
+</body>
+</html>
